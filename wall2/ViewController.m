@@ -22,18 +22,7 @@
 @end
 
 @implementation ViewController
-//@synthesize flabel;
-//@synthesize slabel;
-//@synthesize tlabel;
-//@synthesize folabel;
-//@synthesize fivlabel;
-//@synthesize sixlabel;
-//@synthesize sevenlabel;
-//@synthesize dateLabel;
-////@synthesize walletView;
-//@synthesize leftBtn;
-//@synthesize rightBtn;
-//@synthesize NumberLabel;
+
 
 
 
