@@ -53,8 +53,48 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1c5-G5-PzR" customClass="CircleView">
                                         <rect key="frame" x="40" y="51" width="100" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-6Q-2RG">
+                                                <rect key="frame" x="30" y="30" width="40" height="21"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="kcc-vy-3Bv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(₹300)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zt-ge-Ep1">
+                                                <rect key="frame" x="30" y="46" width="40" height="21"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="6Ny-Ok-kqN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="10"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c1d-Qv-fCf">
+                                                <rect key="frame" x="41" y="8" width="18" height="18"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="HbL-eR-wn1"/>
+                                                    <constraint firstAttribute="width" constant="18" id="pqi-I2-SyU"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="6Zt-ge-Ep1" firstAttribute="leading" secondItem="P7b-6Q-2RG" secondAttribute="leading" id="4bW-0C-tGi"/>
+                                            <constraint firstItem="P7b-6Q-2RG" firstAttribute="top" secondItem="c1d-Qv-fCf" secondAttribute="bottom" constant="4" id="5T5-nV-ult"/>
+                                            <constraint firstItem="P7b-6Q-2RG" firstAttribute="trailing" secondItem="c1d-Qv-fCf" secondAttribute="trailing" constant="11" id="9I2-yp-ASc"/>
+                                            <constraint firstItem="P7b-6Q-2RG" firstAttribute="leading" secondItem="c1d-Qv-fCf" secondAttribute="leading" constant="-11" id="TVG-Ci-GbV"/>
+                                            <constraint firstItem="6Zt-ge-Ep1" firstAttribute="trailing" secondItem="P7b-6Q-2RG" secondAttribute="trailing" id="VEV-lR-NXq"/>
+                                            <constraint firstItem="c1d-Qv-fCf" firstAttribute="centerX" secondItem="1c5-G5-PzR" secondAttribute="centerX" id="cXv-37-y7l"/>
+                                            <constraint firstItem="6Zt-ge-Ep1" firstAttribute="top" secondItem="P7b-6Q-2RG" secondAttribute="bottom" constant="-5" id="vX5-f5-dBm"/>
+                                            <constraint firstItem="c1d-Qv-fCf" firstAttribute="top" secondItem="1c5-G5-PzR" secondAttribute="top" constant="8" id="xS8-hp-p7P"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <animations/>
@@ -88,10 +128,48 @@
                                 <subviews>
                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUY-Wo-t9Z" customClass="CircleView">
                                         <rect key="frame" x="40" y="51" width="100" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(₹300)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwz-3h-PlD">
+                                                <rect key="frame" x="30" y="46" width="40" height="21"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="f3O-Jo-OOX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="10"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlb-CT-rKT">
+                                                <rect key="frame" x="30" y="30" width="40" height="21"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="8NA-1V-hXR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Mj-yD-KE8">
+                                                <rect key="frame" x="41" y="8" width="18" height="18"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="18" id="AcV-QE-rf9"/>
+                                                    <constraint firstAttribute="height" constant="18" id="TZh-m0-RgW"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="wlb-CT-rKT" firstAttribute="leading" secondItem="3Mj-yD-KE8" secondAttribute="leading" constant="-11" id="Ae2-kx-MmA"/>
+                                            <constraint firstItem="wlb-CT-rKT" firstAttribute="top" secondItem="3Mj-yD-KE8" secondAttribute="bottom" constant="4" id="Bfi-nN-rCW"/>
+                                            <constraint firstItem="wlb-CT-rKT" firstAttribute="trailing" secondItem="3Mj-yD-KE8" secondAttribute="trailing" constant="11" id="Dr8-pX-GAw"/>
+                                            <constraint firstItem="3Mj-yD-KE8" firstAttribute="centerX" secondItem="nUY-Wo-t9Z" secondAttribute="centerX" id="OW7-gc-dn6"/>
                                             <constraint firstAttribute="width" constant="100" id="S5p-AO-Vbm"/>
+                                            <constraint firstItem="uwz-3h-PlD" firstAttribute="leading" secondItem="wlb-CT-rKT" secondAttribute="leading" id="U5r-fS-seW"/>
+                                            <constraint firstItem="3Mj-yD-KE8" firstAttribute="top" secondItem="nUY-Wo-t9Z" secondAttribute="top" constant="8" id="cbM-bc-gEN"/>
+                                            <constraint firstItem="uwz-3h-PlD" firstAttribute="trailing" secondItem="wlb-CT-rKT" secondAttribute="trailing" id="ozE-Id-ksQ"/>
+                                            <constraint firstItem="uwz-3h-PlD" firstAttribute="top" secondItem="wlb-CT-rKT" secondAttribute="bottom" constant="-5" id="qH8-pe-QD2"/>
                                             <constraint firstAttribute="height" constant="100" id="za6-LV-leJ"/>
                                         </constraints>
                                     </view>
@@ -149,10 +227,16 @@
                     <navigationItem key="navigationItem" title="My Wallet" id="2Zl-Fm-3ND"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="ImgYConstraint1" destination="cbM-bc-gEN" id="d3F-Zr-hE3"/>
+                        <outlet property="ImgYConstraint2" destination="xS8-hp-p7P" id="kli-e5-Pmq"/>
                         <outlet property="arrowViewBlue" destination="nUY-Wo-t9Z" id="zTf-lt-4hE"/>
                         <outlet property="arrowViewGreen" destination="1c5-G5-PzR" id="FuN-Hp-oLE"/>
                         <outlet property="heightConstraint" destination="za6-LV-leJ" id="MB4-0m-1xg"/>
+                        <outlet property="lblCost1" destination="wlb-CT-rKT" id="qEN-aX-OcO"/>
+                        <outlet property="lblCost2" destination="P7b-6Q-2RG" id="J1v-fI-HLv"/>
                         <outlet property="lblLeftDays" destination="Lkw-5B-JYd" id="dZN-pc-B6m"/>
+                        <outlet property="lblSubCost1" destination="uwz-3h-PlD" id="BiL-2T-ntZ"/>
+                        <outlet property="lblSubCost2" destination="6Zt-ge-Ep1" id="H2c-z3-5x7"/>
                         <outlet property="viewBlue" destination="lDp-2V-FKv" id="tFL-KV-TBu"/>
                         <outlet property="viewGreen" destination="PUj-CZ-3Yw" id="Xio-KT-8gV"/>
                         <outlet property="widthConstraint" destination="S5p-AO-Vbm" id="fHE-d2-Ov8"/>
@@ -167,6 +251,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WHV-Ba-CiB" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pjy-Nl-XH5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -183,4 +268,7 @@
             <point key="canvasLocation" x="-2923.125" y="-50.704225352112658"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star.jpg" width="23" height="23"/>
+    </resources>
 </document>

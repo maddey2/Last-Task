@@ -18,6 +18,10 @@
 
 @property(weak,nonatomic) IBOutlet UILabel *lblLeftDays;
 
+@property(weak,nonatomic) IBOutlet UILabel *lblCost1,*lblCost2;
+
+@property(weak,nonatomic) IBOutlet UILabel *lblSubCost1,*lblSubCost2;
+
 @property(weak,nonatomic) IBOutlet CircleView *arrowViewGreen;
 
 @property(weak,nonatomic) IBOutlet CircleView *arrowViewBlue;
@@ -25,6 +29,10 @@
 @property(weak,nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @property(weak,nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
+
+@property(weak,nonatomic) IBOutlet NSLayoutConstraint *ImgYConstraint1;
+
+@property(weak,nonatomic) IBOutlet NSLayoutConstraint *ImgYConstraint2;
 
 
 //@property (weak, nonatomic) IBOutlet UILabel *flabel;

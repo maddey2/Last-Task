@@ -20,6 +20,10 @@
     [self setNeedsDisplay];
 }
 
+CGFloat DegreesToRadians(CGFloat degrees)
+{
+    return degrees * M_PI / 180;
+};
 
 // My Custom Method for drawing view in circular path,
 
@@ -34,10 +38,17 @@
    __block  UIImage *arrow;
 
     arrow = [CircleView imageWithImage:[UIImage imageNamed:@"dotb.png"] scaledToSize:CGSizeMake(5, 5)];
+    
 
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    CGPathAddEllipseInRect(path, nil, CGRectMake(self.bounds.origin.x+5, self.bounds.origin.y+5, self.bounds.size.width-8.5, self.bounds.size.height-10));
 
-    UIBezierPath *cPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(self.bounds.origin.x+5, self.bounds.origin.y+5, self.bounds.size.width-10, self.bounds.size.height-10)];
+//    UIBezierPath *cPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(self.bounds.origin.x+5, self.bounds.origin.y+5, self.bounds.size.width-10, self.bounds.size.height-10)];
 
+    
+    UIBezierPath *cPath = [UIBezierPath bezierPathWithCGPath:path];
+    
     [cPath Rob_forEachPointAtInterval:self.interval perform:^(CGPoint point, CGVector vector) {
         CGContextRef gc = UIGraphicsGetCurrentContext();
         CGContextSaveGState(gc); {

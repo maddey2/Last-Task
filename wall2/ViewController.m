@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    
 
     // Do any additional setup after loading the view, typically from a nib.
     //    firstdate = [NSDate date];
@@ -41,7 +41,7 @@
     
     NSArray *jsonObject;
     jsonObject = @[@{@"Id1":@"mad",
-                     @"people1":@"300"},
+                     @"people1":@"300",@"cost":@"300"},
                    @{@"Id2":@"normal",
                      @"people2":@"9",@"total2":@6}];
     
@@ -58,6 +58,14 @@
     
     NSDictionary *dict = [jsonArray objectAtIndex:0];
     NSDictionary *dict2 = [jsonArray objectAtIndex:1];
+    
+    _lblCost1.text = [dict objectForKey:@"cost"];
+
+    _lblCost2.text = [dict objectForKey:@"cost"];
+
+    _lblSubCost1.text = [NSString stringWithFormat:@"(₹%@)",[dict objectForKey:@"cost"]];
+
+    _lblSubCost2.text = [NSString stringWithFormat:@"(₹%@)",[dict objectForKey:@"cost"]];
     
     global.numDays = [NSNumber numberWithInteger:[[dict2 objectForKey:@"total2"] integerValue]];
 
@@ -94,6 +102,8 @@
         {
             _widthConstraint.constant = 140;
             _heightConstraint.constant = 140;
+            _ImgYConstraint1.constant = _ImgYConstraint1.constant+38;
+            _ImgYConstraint2.constant = _ImgYConstraint2.constant+38;
 
             break;
         }
@@ -102,6 +112,8 @@
 
             _widthConstraint.constant = 160;
             _heightConstraint.constant = 160;
+            _ImgYConstraint1.constant = _ImgYConstraint1.constant+47;
+            _ImgYConstraint2.constant = _ImgYConstraint2.constant+47;
             break;
         }
             

@@ -45,6 +45,7 @@
 		B8EFEFBF1C32A48E00FB3840 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B8EFEFBE1C32A48E00FB3840 /* circle.png */; };
 		B8EFEFD11C32B39D00FB3840 /* dotb.png in Resources */ = {isa = PBXBuildFile; fileRef = B8EFEFD01C32B39D00FB3840 /* dotb.png */; };
 		B8EFEFD31C32B3A600FB3840 /* dots.png in Resources */ = {isa = PBXBuildFile; fileRef = B8EFEFD21C32B3A600FB3840 /* dots.png */; };
+		D41D3E401C5B58C800BBEC8B /* star.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41D3E3F1C5B58C800BBEC8B /* star.jpg */; settings = {ASSET_TAGS = (); }; };
 		D4D997141C58A20500D8A293 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D9970B1C58A20500D8A293 /* CircleView.m */; settings = {ASSET_TAGS = (); }; };
 		D4D997151C58A20500D8A293 /* UIBezierPath+Rob_dash.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D9970D1C58A20500D8A293 /* UIBezierPath+Rob_dash.m */; settings = {ASSET_TAGS = (); }; };
 		D4D997171C58A20500D8A293 /* UIBezierPath+Rob_forEach.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D997111C58A20500D8A293 /* UIBezierPath+Rob_forEach.m */; settings = {ASSET_TAGS = (); }; };
@@ -116,6 +117,7 @@
 		B8EFEFBE1C32A48E00FB3840 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		B8EFEFD01C32B39D00FB3840 /* dotb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dotb.png; sourceTree = "<group>"; };
 		B8EFEFD21C32B3A600FB3840 /* dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dots.png; sourceTree = "<group>"; };
+		D41D3E3F1C5B58C800BBEC8B /* star.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star.jpg; sourceTree = "<group>"; };
 		D4D9970A1C58A20400D8A293 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		D4D9970B1C58A20500D8A293 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		D4D9970C1C58A20500D8A293 /* UIBezierPath+Rob_dash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Rob_dash.h"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				B85745461C3168980034E832 /* Assets.xcassets */,
 				B8122FE31C3307E600A12051 /* newwwwww.png */,
 				B8C2317C1C398D5F00BF75D5 /* greenline.png */,
+				D41D3E3F1C5B58C800BBEC8B /* star.jpg */,
 				B8C231861C399C3D00BF75D5 /* deselectBtn.png */,
 				B8122FDF1C32EC2600A12051 /* riter.png */,
 				B8C231881C399C4900BF75D5 /* selectBtn.png */,
@@ -377,6 +380,7 @@
 				B8C2316A1C39733C00BF75D5 /* Roboto-Bold.ttf in Resources */,
 				B8122FE61C330B3300A12051 /* io.png in Resources */,
 				B857454A1C3168980034E832 /* LaunchScreen.storyboard in Resources */,
+				D41D3E401C5B58C800BBEC8B /* star.jpg in Resources */,
 				B8C231761C39733C00BF75D5 /* RobotoCondensed-Italic.ttf in Resources */,
 				B8C2317D1C398D5F00BF75D5 /* greenline.png in Resources */,
 				B8C2316B1C39733C00BF75D5 /* Roboto-BoldItalic.ttf in Resources */,
