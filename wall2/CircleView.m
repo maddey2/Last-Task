@@ -33,6 +33,8 @@ CGFloat DegreesToRadians(CGFloat degrees)
     
     global.numCircle = [NSNumber numberWithInt:0];
     
+    __block BOOL isTop = false;
+    
     NSInteger less = 22-[global.numDays integerValue];
     
    __block  UIImage *arrow;
@@ -62,18 +64,37 @@ CGFloat DegreesToRadians(CGFloat degrees)
             {
                 arrow = [CircleView imageWithImage:[UIImage imageNamed:@"dotb.png"] scaledToSize:CGSizeMake(5, 5)];
                 global.numCircle = [NSNumber numberWithInteger:[global.numCircle integerValue]+1];
-                
+                [arrow drawAtPoint:CGPointZero];
 
             }
             else if([global.numCircle integerValue]>=less && [global.numCircle integerValue]<22)
             {
                 arrow = [CircleView imageResize:arrow andResizeTo:CGSizeMake(3, 3)];
                 global.numCircle = [NSNumber numberWithInteger:[global.numCircle integerValue]+1];
+                if([global.numCircle integerValue] == 21)
+                {
+                    isTop = YES;
+                }
+                [arrow drawAtPoint:CGPointZero];
             }
             else
             {
-                arrow = [CircleView imageWithImage:[UIImage imageNamed:@"dotb.png"] scaledToSize:CGSizeMake(5, 5)];
-                global.numCircle = [NSNumber numberWithInteger:[global.numCircle integerValue]+1];
+                if(isTop)
+                {
+                    arrow = [CircleView imageWithImage:[UIImage imageNamed:@"dotb.png"] scaledToSize:CGSizeMake(5, 4)];
+                    CGPoint point = CGPointZero;
+                    point.y = -1;
+                    isTop = NO;
+                    global.numCircle = [NSNumber numberWithInteger:[global.numCircle integerValue]+1];
+                    [arrow drawAtPoint:point];
+                }
+                else
+                {
+                    arrow = [CircleView imageWithImage:[UIImage imageNamed:@"dotb.png"] scaledToSize:CGSizeMake(5, 5)];
+                    global.numCircle = [NSNumber numberWithInteger:[global.numCircle integerValue]+1];
+                    [arrow drawAtPoint:CGPointZero];
+                }
+
             }
             }
             [arrow drawAtPoint:CGPointZero];

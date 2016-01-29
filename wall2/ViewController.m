@@ -90,12 +90,15 @@
     switch ((int)[UIScreen mainScreen].bounds.size.height) {
         case 480:
         {
+            _ImgYConstraint1.constant = _ImgYConstraint1.constant+15;
+            _ImgYConstraint2.constant = _ImgYConstraint2.constant+15;
 
             break;
         }
         case 568:
         {
-
+            _ImgYConstraint1.constant = _ImgYConstraint1.constant+15;
+            _ImgYConstraint2.constant = _ImgYConstraint2.constant+15;
             break;
         }
         case 667:
