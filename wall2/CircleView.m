@@ -81,9 +81,18 @@ CGFloat DegreesToRadians(CGFloat degrees)
             {
                 if(isTop)
                 {
-                    arrow = [CircleView imageWithImage:[UIImage imageNamed:@"dotb.png"] scaledToSize:CGSizeMake(5, 4)];
                     CGPoint point = CGPointZero;
-                    point.y = -1;
+
+                    if([UIScreen mainScreen].bounds.size.height == 667)
+                    {
+                        arrow = [CircleView topImage];
+                    }
+                    else
+                    {
+                        arrow = [CircleView imageWithImage:[UIImage imageNamed:@"dotb.png"] scaledToSize:CGSizeMake(5, 4)];
+                    }
+                    
+                    point.y = -1.0;
                     isTop = NO;
                     global.numCircle = [NSNumber numberWithInteger:[global.numCircle integerValue]+1];
                     [arrow drawAtPoint:point];
@@ -104,6 +113,20 @@ CGFloat DegreesToRadians(CGFloat degrees)
 
 
 // Class method to scale image
+
++(UIImage *)topImage
+{
+    CGSize newSize = CGSizeMake(4.5, 4.8);
+    CGFloat scale = [[UIScreen mainScreen]scale];
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, scale);
+    [[UIImage imageNamed:@"dotb.png"] drawInRect:CGRectMake(0,-0.5,newSize.width,newSize.height)];
+    
+    
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
 
 + (UIImage*)imageWithImage:(UIImage*)image
               scaledToSize:(CGSize)newSize;
