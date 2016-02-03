@@ -8,15 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "CircleView.h"
+#import "UUChart.h"
 
-@interface ViewController : UIViewController
-- (CGSize)sizeThatFits:(CGSize)size ;
+@interface ViewController : UIViewController<UUChartDataSource,UIGestureRecognizerDelegate>
+{
+    UUChart *viewChart;
+}
 
 @property(weak,nonatomic) IBOutlet UIView *viewGreen;
 
 @property(weak,nonatomic) IBOutlet UIView *viewBlue;
 
 @property(weak,nonatomic) IBOutlet UILabel *lblLeftDays;
+
+@property(weak,nonatomic) IBOutlet UILabel *lblUsage;
+
+@property(weak,nonatomic) IBOutlet UIView *viewGraph;
 
 @property(weak,nonatomic) IBOutlet UILabel *lblCost1,*lblCost2;
 
@@ -34,29 +41,17 @@
 
 @property(weak,nonatomic) IBOutlet NSLayoutConstraint *ImgYConstraint2;
 
+@property(weak,nonatomic) IBOutlet NSLayoutConstraint *lblXConstraint;
 
-//@property (weak, nonatomic) IBOutlet UILabel *flabel;
-//@property (weak, nonatomic) IBOutlet UILabel *slabel;
-//
-//@property (weak, nonatomic) IBOutlet UILabel *tlabel;
-//
-//@property (weak, nonatomic) IBOutlet UILabel *folabel;
-//
-//@property (weak, nonatomic) IBOutlet UILabel *fivlabel;
-//@property (weak, nonatomic) IBOutlet UILabel *sixlabel;
-//@property (weak, nonatomic) IBOutlet UILabel *sevenlabel;
-//
-//
-////@property (weak, nonatomic) IBOutlet UIView *walletView;//1
-//
-//@property (weak, nonatomic) IBOutlet UILabel *dateLabel;//2
-//@property (weak, nonatomic) IBOutlet UIButton *leftBtn;
-//@property (weak, nonatomic) IBOutlet UIButton *rightBtn;
-//
-//
-//@property (weak, nonatomic) IBOutlet UILabel *NumberLabel;
+@property(weak,nonatomic) IBOutlet NSLayoutConstraint *lblWidthConstraint;
 
+@property(weak,nonatomic) IBOutlet UIButton *rightBtn;
 
+@property(weak,nonatomic) IBOutlet UIButton *leftBtn;
+
+@property(weak,nonatomic) IBOutlet UILabel *dateLabel;
+
+@property(weak,nonatomic) IBOutlet UILabel *label1,*label2,*label3,*label4,*label5,*label6,*label7;
 
 @end
 
