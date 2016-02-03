@@ -119,11 +119,19 @@
             _lblWidthConstraint.constant = -4.0;
             _ImgYConstraint1.constant = _ImgYConstraint1.constant+15;
             _ImgYConstraint2.constant = _ImgYConstraint2.constant+15;
+            _lblFlext.font = [UIFont fontWithName:@"Roboto-Bold" size:11];
+            _lblEconomy.font = [UIFont fontWithName:@"Roboto-Bold " size:11];
+            _lblCost1.font = [UIFont fontWithName:@"Roboto-Bold " size:11];
+            _lblCost2.font = [UIFont fontWithName:@"Roboto-Bold " size:11];
 
             break;
         }
         case 568:
         {
+            _lblFlext.font = [UIFont fontWithName:@"Roboto-Bold" size:11];
+            _lblEconomy.font = [UIFont fontWithName:@"Roboto-Bold" size:11];
+            _lblCost1.font = [UIFont fontWithName:@"Roboto-Bold" size:11];
+            _lblCost2.font = [UIFont fontWithName:@"Roboto-Bold" size:11];
             _lblXConstraint.constant = _lblXConstraint.constant+2.0;
             _lblWidthConstraint.constant = -4.0;
             _ImgYConstraint1.constant = _ImgYConstraint1.constant+15;
